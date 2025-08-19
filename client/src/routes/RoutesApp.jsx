@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Layout } from "@/ui/layout/Layout";
+import { Layout } from "@/ui/Layout";
 import { ErrorPage } from "@/pages/ErrorPage";
 import { HomePage } from "@/pages/HomePage";
 import NeuviemePage from "@/pages/NeuviemePage";
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
         element: <NS4Page />,
       },
       {
-        path: "/about",
+        path: "/a-propos",
         element: <AboutUsPage />,
       },
       {
