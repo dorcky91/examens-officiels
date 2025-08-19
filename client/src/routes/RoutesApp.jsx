@@ -1,9 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { ErrorPage } from "../pages/ErrorPage";
-import { LoginPage } from "../pages/LoginPage";
-import { Layout } from "../ui/layout/Layout";
-import { HomePage } from "../pages/HomePage";
-import { DashboardPage } from "../pages/DashboardPage";
+import { Layout } from "@/ui/layout/Layout";
+import { ErrorPage } from "@/pages/ErrorPage";
+import { HomePage } from "@/pages/HomePage";
+import NeuviemePage from "@/pages/NeuviemePage";
+import NS4Page from "@/pages/NS4Page";
+import AboutUsPage from "@/pages/AboutUsPage";
+import StatistiquesPage from "@/pages/StatistiquesPage";
 
 const router = createBrowserRouter([
   {
@@ -12,16 +14,24 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        index: true,
         element: <HomePage />,
       },
       {
-        path: "/dashboard",
-        element: <DashboardPage />,
+        path: "/neuvieme",
+        element: <NeuviemePage />,
       },
       {
-        path: "/login",
-        element: <LoginPage />,
+        path: "/ns4",
+        element: <NS4Page />,
+      },
+      {
+        path: "/about",
+        element: <AboutUsPage />,
+      },
+      {
+        path: "/statistiques",
+        element: <StatistiquesPage />,
       },
       {
         path: "*",
