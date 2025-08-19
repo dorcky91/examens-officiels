@@ -10,3 +10,18 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## LIBRARIES
+
+- npm i react-hook-form @hookform/devtools @hookform/resolvers zod
+- npm i tailwindcss @tailwindcss/vite
+- npm i @tanstack/react-query @tanstack/react-query-devtools @tanstack/eslint-plugin-query
+- npm i axios
+- npm i react-hot-toast
+- npm i sweetalert2
+
+## COLORS
+
+#0F172A --> Neutral
+#2E8E84 --> Teal
+#0F62A5 --> Primary
