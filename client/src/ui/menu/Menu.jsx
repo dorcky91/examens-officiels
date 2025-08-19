@@ -10,8 +10,8 @@ export const Menu = () => {
       </Link>
       <div className="nav-link">
         <NavLink to="/">Home</NavLink>
-        <NavLink to="/dashboard">Dashboard</NavLink>
-        <NavLink to="/login">Login</NavLink>
+        <NavLink to="/neuvieme">Dashboard</NavLink>
+        <NavLink to="/ns4">Login</NavLink>
       </div>
     </nav>
   );
