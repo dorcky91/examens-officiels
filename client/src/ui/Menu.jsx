@@ -4,7 +4,7 @@ import logo from "@/assets/images/LOGO.png";
 
 export const Menu = () => {
   return (
-    <nav className="sticky top-0 border-b border-gray-300 backdrop-blur-2xl z-50">
+    <nav className="sticky top-0 border-b border-gray-300 backdrop-blur-lg z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/">
@@ -33,7 +33,7 @@ const links = [
   { to: "/", label: "Accueil" },
   { to: "/neuvieme", label: "9AF" },
   { to: "/ns4", label: "NS4" },
-  { to: "/motivation", label: "Motivation" },
+  { to: "/motivations", label: "Motivations" },
   { to: "/a-propos", label: "À propos" },
   { to: "/statistiques", label: "Statistiques" },
 ];

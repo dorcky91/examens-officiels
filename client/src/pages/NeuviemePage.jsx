@@ -1,3 +1,13 @@
+import Courses from "@/components/neuvieme/Courses";
+import Hero from "@/components/neuvieme/Hero";
+
 export default function NeuviemePage() {
-  return <div>NeuviemePage</div>;
+  return (
+    <>
+      <Hero />
+      <main>
+        <Courses />
+      </main>
+    </>
+  );
 }

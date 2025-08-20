@@ -1,17 +1,18 @@
 import { Outlet } from "react-router-dom";
 import { Menu } from "./Menu";
 import Footer from "./Footer";
+import QuickAction from "@/components/home/QuickAction";
 
 export const Layout = () => {
   return (
-    <div className="min-h-screen bg-gray-100 overflow-hidden">
+    <>
       <Menu />
-
-      <main>
+      <div className="min-h-screen bg-gray-100 text-gray-800">
         <Outlet />
-      </main>
 
-      <Footer />
-    </div>
+        <QuickAction />
+        <Footer />
+      </div>
+    </>
   );
 };
