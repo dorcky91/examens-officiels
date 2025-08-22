@@ -21,6 +21,7 @@ export default function NS4() {
             src="https://plus.unsplash.com/premium_photo-1661510717563-d181379f2778?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGJsYWNrJTIwc3R1ZGVudCUyMGV4bWF8ZW58MHx8MHx8fDA%3D"
             alt="Description"
             style={{ height: "450px" }}
+            loading="lazy"
             className="w-full object-cover rounded-lg"
           />
           <div

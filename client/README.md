@@ -25,3 +25,7 @@ If you are developing a production application, we recommend using TypeScript wi
 #0F172A --> Neutral
 #2E8E84 --> Teal
 #0F62A5 --> Primary
+
+## DESIGN
+
+- https://www.figma.com/design/JVQmgBMa4q7om2T7b4aU6q/ExamenOfficielUI?node-id=0-1&p=f&t=1DziLC6bdF26YtxK-0

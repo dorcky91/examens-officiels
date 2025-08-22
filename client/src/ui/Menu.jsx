@@ -1,6 +1,4 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "@/assets/images/LOGO.png";
-// import "./Menu.css";
 
 export const Menu = () => {
   return (
@@ -8,7 +6,12 @@ export const Menu = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/">
-            <img src={logo} alt="Logo" className="object-contain h-10" />
+            <img
+              src="/LOGO.png"
+              alt="Logo"
+              loading="lazy"
+              className="object-contain h-10"
+            />
           </Link>
           <ul className="flex gap-3 items-center text-sm">
             {links.map(({ to, label }) => (
