@@ -10,10 +10,10 @@ export const HomePage = () => {
     <>
       <Hero />
       <main>
+        <Sponsors />
         <Stats />
         <Neuvieme />
         <NS4 />
-        <Sponsors />
         <WhyUs />
       </main>
     </>

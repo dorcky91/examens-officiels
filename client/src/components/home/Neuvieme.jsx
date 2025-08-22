@@ -9,6 +9,7 @@ export default function Neuvieme() {
             src="https://images.unsplash.com/photo-1546525848-3ce03ca516f6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Description"
             style={{ height: "450px" }}
+            loading="lazy"
             className="w-full object-cover rounded-lg"
           />
           <div
