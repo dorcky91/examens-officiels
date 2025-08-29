@@ -6,7 +6,7 @@ export default function NeuviemePage() {
     <>
       <Hero />
       <main>
-        <Courses />
+        <Courses grade="neuvieme" />
       </main>
     </>
   );

@@ -11,7 +11,7 @@ export default function Hero() {
               </h1>
             </div>
             <div className="mt-auto">
-              <p>
+              <p className="text-gray-600">
                 Nous sommes passionnés par l'idée de démocratiser l'accès à une
                 éducation de qualité et de révolutionner la façon dont les
                 étudiants se préparent aux examens officiels. Notre plateforme

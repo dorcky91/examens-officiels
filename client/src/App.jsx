@@ -8,6 +8,7 @@ import AboutUsPage from "@/pages/AboutUsPage";
 import StatistiquesPage from "@/pages/StatistiquesPage";
 import NeuviemeExamDetailsPage from "./pages/NeuviemeExamDetailsPage";
 import NS4ExamDetailsPage from "./pages/NS4ExamDetailsPage";
+import TryExamenPage from "./pages/TryExamenPage";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "/statistiques",
         element: <StatistiquesPage />,
+      },
+      {
+        path: "/essai",
+        element: <TryExamenPage />,
       },
       {
         path: "*",

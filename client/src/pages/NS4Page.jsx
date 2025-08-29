@@ -6,7 +6,7 @@ export default function NS4Page() {
     <>
       <Hero />
       <main>
-        <Courses />
+        <Courses grade="ns4" />
       </main>
     </>
   );
