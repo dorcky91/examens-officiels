@@ -11,7 +11,7 @@ export default function NS4() {
             exercices pratiques adaptés.
           </p>
           <Link
-            to="/neuvieme"
+            to="/ns4"
             className="bg-blue-600 hover:bg-blue-800 hover:shadow text-white px-4 py-3 rounded hover:scale-105 transition-transform duration-500 inline-block">
             Voir les examens 👉
           </Link>

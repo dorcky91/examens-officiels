@@ -1,3 +1,5 @@
+import { TEAM } from "@/utils/helpers";
+
 export default function Team() {
   return (
     <section className="bg-white py-20">
@@ -10,7 +12,7 @@ export default function Team() {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {team.map((member) => (
+          {TEAM.map((member) => (
             <div
               key={member.name}
               className="bg-gray-100 p-6 rounded-lg border border-gray-200 hover:shadow-2xl hover:bg-white transition-all duration-300">
@@ -30,6 +32,7 @@ export default function Team() {
                         key={link.platform}
                         href={link.url}
                         target="_blank"
+                        rel="noopener noreferrer"
                         title={link.platform}>
                         <img
                           src={`/src/assets/images/${link.platform}.png`}
@@ -52,55 +55,3 @@ export default function Team() {
     </section>
   );
 }
-
-const team = [
-  {
-    name: "John Doe",
-    role: "Programmeur full stack",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
-    description:
-      "Passionné par le développement web et les nouvelles technologies.",
-    socialLinks: [
-      { platform: "LinkedIn", url: "#" },
-      { platform: "X", url: "#" },
-      { platform: "Instagram", url: "#" },
-      { platform: "Facebook", url: "#" },
-    ],
-  },
-  {
-    name: "Jane Smith",
-    role: "Designer UI/UX",
-    image: "https://randomuser.me/api/portraits/women/1.jpg",
-    description: "Passionnée par le design et l'expérience utilisateur.",
-    socialLinks: [
-      { platform: "LinkedIn", url: "#" },
-      { platform: "X", url: "#" },
-      { platform: "Instagram", url: "#" },
-      { platform: "Facebook", url: "#" },
-    ],
-  },
-  {
-    name: "Alice Johnson",
-    role: "Chef de projet",
-    image: "https://randomuser.me/api/portraits/women/2.jpg",
-    description: "Passionnée par la gestion de projet et l'organisation.",
-    socialLinks: [
-      { platform: "LinkedIn", url: "#" },
-      { platform: "X", url: "#" },
-      { platform: "Instagram", url: "#" },
-      { platform: "Facebook", url: "#" },
-    ],
-  },
-  {
-    name: "Bob Martin",
-    role: "Développeur backend",
-    image: "https://randomuser.me/api/portraits/men/2.jpg",
-    description: "Passionné par les systèmes et les bases de données.",
-    socialLinks: [
-      { platform: "LinkedIn", url: "#" },
-      { platform: "X", url: "#" },
-      { platform: "Instagram", url: "#" },
-      { platform: "Facebook", url: "#" },
-    ],
-  },
-];
