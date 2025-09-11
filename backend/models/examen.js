@@ -4,6 +4,7 @@ const ExamenSchema = new Schema(
   {
     idClasse: { type: Schema.Types.ObjectId, ref: "Classe", required: true },
     nom: { type: String, required: true }, // materia tomada desde Classe
+    matiereId: { type: Schema.Types.ObjectId },
     theme: { type: String, required: true },
     texte: { type: String, required: true },
     date: { type: String, required: true },

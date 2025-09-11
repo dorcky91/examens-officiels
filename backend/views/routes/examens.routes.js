@@ -10,6 +10,8 @@ router.get(
   "/classe/:idClasse/matiere/:nom",
   ctrl.getExamenesByClasseAndMatiere
 );
-router.get("/date/:date", ctrl.getExamenesByDate);
+// router.get("/date/:date", ctrl.getExamenesByDate);
+// Exámenes por materia y fecha
+router.get("/matiere/:nom/date/:date", ctrl.getExamenesByMatiereAndDate);
 
 module.exports = router;

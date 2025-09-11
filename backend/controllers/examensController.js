@@ -66,16 +66,35 @@ exports.getExamenesByClasseAndMatiere = async (req, res) => {
   }
 };
 
-// Obtener exámenes por año (ej: "2023") o mes-año (ej: "Juillet 2023")
-exports.getExamenesByDate = async (req, res) => {
+// // Obtener exámenes por año (ej: "2023") o mes-año (ej: "Juillet 2023")
+// exports.getExamenesByDate = async (req, res) => {
+//   try {
+//     const { params } = req;
+//     const { date } = params; // Ejemplo: "2023" o "Juillet 2023"
+//     const examenes = await Examen.find({
+//       date: { $regex: date, $options: "i" },
+//     });
+//     res.json(examenes);
+//   } catch (error) {
+//     res.status(500).json({ msg: "Error al obtener exámenes por fecha", error });
+//   }
+// };
+
+// Obtener exámenes por materia y fecha
+exports.getExamenesByMatiereAndDate = async (req, res) => {
   try {
-    const { params } = req;
-    const { date } = params; // Ejemplo: "2023" o "Juillet 2023"
+    const { nom, date } = req.params;
+    // ejemplo: nom="Español", date="2023" o "Juillet 2023"
+
     const examenes = await Examen.find({
-      date: { $regex: date, $options: "i" },
-    });
+      nom, // filtra materia específica
+      date: { $regex: date, $options: "i" }, // busca coincidencia en fecha
+    }).populate("idClasse", "nom");
+
     res.json(examenes);
   } catch (error) {
-    res.status(500).json({ msg: "Error al obtener exámenes por fecha", error });
+    res
+      .status(500)
+      .json({ msg: "Error al obtener exámenes por materia y fecha", error });
   }
 };
