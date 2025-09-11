@@ -3,6 +3,14 @@ const cors = require("cors");
 const Database = require("./databases/config");
 const userAPI = require("./APIS/userAPI");
 const examAnglaisAPI = require("./APIS/examAnglaisAPI");
+const matieresAPI = require("./APIS/matieresAPI");
+const examensAPI = require("./APIS/examensAPI");
+const espagnolAPI = require("./APIS/examenes/espagnolAPI");
+const anglaisAPI = require("./APIS/examenes/anglaisAPI");
+const examsAPI = require("./APIS/examenes/examsAPI");
+const niveauAPI = require("./APIS/examenes/niveauAPI");
+const matiereEAPI = require("./APIS/examenes/matiereEAPI");
+const classesAPI = require("./APIS/classesAPI");
 
 class MiServidor {
   constructor() {
@@ -42,6 +50,14 @@ class MiServidor {
   routes() {
     userAPI(this.app);
     examAnglaisAPI(this.app);
+    matieresAPI(this.app);
+    examensAPI(this.app);
+    espagnolAPI(this.app);
+    anglaisAPI(this.app);
+    examsAPI(this.app);
+    niveauAPI(this.app);
+    matiereEAPI(this.app);
+    classesAPI(this.app);
 
     // this.app.use(
     //   this.userPath,

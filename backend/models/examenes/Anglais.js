@@ -1,24 +1,9 @@
-const { Schema, model, default: mongoose } = require("mongoose");
+const { Schema } = require("mongoose");
+const Exam = require("./Exam");
 
-const ExamAnglaisSchema = Schema(
-  {
-    idClasse: {
-      type: mongoose.Schema.Types.ObjectId,
-      required: [true, "Campo requerido"],
-      ref: "classes",
-    },
-    date: {
-      type: String,
-      required: [true, "Campo requerido"],
-    },
-    thème: {
-      type: String,
-      required: [true, "Campo requerido"],
-    },
-    texte: {
-      type: String,
-      required: [true, "Campo requerido"],
-    },
+const Anglais = Exam.discriminator(
+  "Anglais",
+  Schema({
     sections: [
       {
         section: {
@@ -49,14 +34,7 @@ const ExamAnglaisSchema = Schema(
         ],
       },
     ],
-    active: {
-      type: Boolean,
-      default: true,
-    },
-  },
-  {
-    timestamps: true,
-  }
+  })
 );
 
-module.exports = model("Anglais_9AF", ExamAnglaisSchema);
+module.exports = Anglais;
