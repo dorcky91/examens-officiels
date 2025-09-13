@@ -1,7 +1,18 @@
+import axios from "axios";
+
+const API_URL = import.meta.env.VITE_API_URL;
+
+export const httpClient = axios.create({
+  baseURL: API_URL,
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
+
 export const LINKS = [
   { to: "/", label: "Accueil" },
-  { to: "/neuvieme", label: "9AF" },
-  { to: "/ns4", label: "NS4" },
+  // { to: "/neuvieme", label: "9AF" },
+  // { to: "/ns4", label: "NS4" },
   { to: "/motivations", label: "Motivations" },
   { to: "/a-propos", label: "À propos" },
   { to: "/statistiques", label: "Statistiques" },

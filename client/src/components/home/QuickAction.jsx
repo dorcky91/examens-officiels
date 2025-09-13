@@ -13,9 +13,9 @@ export default function QuickAction() {
             nos examens pratiques.
           </h2>
           <Link
-            to="/neuvieme"
+            to="/essai"
             className="bg-blue-600 hover:bg-blue-800 hover:shadow text-white px-4 py-3 rounded hover:scale-105 transition-transform duration-500 inline-block">
-            En savoir plus 👉
+            Commencer un essai 👉
           </Link>
         </div>
       </div>

@@ -1,6 +1,15 @@
+import { useClasseByName } from "@/hooks/classes/queries";
 import { Link } from "react-router-dom";
 
-export default function QuickLinks() {
+export default function QuickLinks({ name, url }) {
+  //#region Hooks
+  const { classe } = useClasseByName(name);
+  const matiereLinks = classe?.matieres?.map((m) => {
+    const encodeName = encodeURIComponent(encodeURIComponent(m.nom));
+    return { nom: m.nom, url: `/${url}/${encodeName}` };
+  });
+  //#endregion
+
   return (
     <div className="col-span-1 lg:col-span-4">
       <div className="sticky top-20">
@@ -9,38 +18,16 @@ export default function QuickLinks() {
         </div>
         <div className="bg-gray-200 p-6 rounded-lg mb-10">
           <ul className="space-y-3 divide-y-1 divide-gray-300 text-sm">
-            <li className="py-1">
-              <Link
-                to="/neuvieme/examens/1"
-                className="flex items-center gap-2 text-gray-500 hover:text-blue-800">
-                <span>👉</span>
-                <span>Mathématiques</span>
-              </Link>
-            </li>
-            <li className="py-1">
-              <Link
-                to="/neuvieme/examens/1"
-                className="flex items-center gap-2 text-gray-500 hover:text-blue-800">
-                <span>👉</span>
-                <span>Français</span>
-              </Link>
-            </li>
-            <li className="py-1">
-              <Link
-                to="/neuvieme/examens/1"
-                className="flex items-center gap-2 text-gray-500 hover:text-blue-800">
-                <span>👉</span>
-                <span>Sciences</span>
-              </Link>
-            </li>
-            <li className="py-1">
-              <Link
-                to="/neuvieme/examens/1"
-                className="flex items-center gap-2 text-gray-500 hover:text-blue-800">
-                <span>👉</span>
-                <span>Histoire</span>
-              </Link>
-            </li>
+            {matiereLinks?.map(({ nom, url }) => (
+              <li className="py-1" key={nom}>
+                <Link
+                  to={url}
+                  className="flex items-center gap-2 text-gray-500 hover:text-blue-800">
+                  <span>👉</span>
+                  <span>{nom}</span>
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div

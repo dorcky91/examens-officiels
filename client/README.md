@@ -19,6 +19,7 @@ If you are developing a production application, we recommend using TypeScript wi
 - npm i axios
 - npm i react-hot-toast
 - npm i sweetalert2
+- npm i html-react-parser
 
 ## COLORS
 
