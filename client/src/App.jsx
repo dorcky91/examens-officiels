@@ -25,7 +25,7 @@ const router = createBrowserRouter([
         element: <NeuviemePage />,
       },
       {
-        path: "/neuvieme/:courseId",
+        path: "/neuvieme/:courseName",
         element: <NeuviemeExamDetailsPage />,
       },
       {
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
         element: <NS4Page />,
       },
       {
-        path: "/ns4/:courseId",
+        path: "/ns4/:courseName",
         element: <NS4ExamDetailsPage />,
       },
       {

@@ -1,98 +1,41 @@
-export default function Examen() {
+import Creole from "@/components/structures/Creole";
+import { exam9e } from "@/utils/data";
+
+export default function Examen({ courseName }) {
+  //#region Prueba
+  const filteredExamensByName = exam9e.filter((exam) =>
+    exam.nom
+      .toLowerCase()
+      .includes(decodeURIComponent(courseName.toLowerCase()))
+  );
+  const getYears = filteredExamensByName.map((exam) => {
+    return {
+      id: exam._id,
+      ...exam,
+    };
+  });
+  //#endregion
+
   return (
     <div className="col-span-1 lg:col-span-8">
       <form className="mb-5">
         <select className="block w-full lg:w-auto bg-white border border-gray-300 rounded-md p-2">
           <option value="">Sélectionner une année...</option>
-          <option value="2024">Année 2024</option>
-          <option value="2025">Année 2025</option>
+          {getYears.map((year) => (
+            <option key={year.id} value={year.id}>
+              {year.date}
+            </option>
+          ))}
         </select>
       </form>
 
-      <div className="p-6 bg-white rounded-lg shadow-lg">
-        <h2 className="text-2xl font-bold mb-4">Examen Details</h2>
-        <p className="mb-4">Here you can find the details about the examen.</p>
+      <div className="p-10 bg-white rounded-lg shadow-lg">
+        <h2 className="text-2xl font-bold mb-4k">
+          {decodeURIComponent(courseName)}
+        </h2>
+        <p className="mb-4">{getYears[0]?.date}</p>
 
-        <ul className="list-disc list-inside">
-          <li>Examen ID: 12345</li>
-          <li>Date: 2023-10-01</li>
-          <li>Duration: 2 hours</li>
-        </ul>
-        <ul className="list-disc list-inside">
-          <li>Examen ID: 12345</li>
-          <li>Date: 2023-10-01</li>
-          <li>Duration: 2 hours</li>
-        </ul>
-        <ul className="list-disc list-inside">
-          <li>Examen ID: 12345</li>
-          <li>Date: 2023-10-01</li>
-          <li>Duration: 2 hours</li>
-        </ul>
-        <ul className="list-disc list-inside">
-          <li>Examen ID: 12345</li>
-          <li>Date: 2023-10-01</li>
-          <li>Duration: 2 hours</li>
-        </ul>
-        <ul className="list-disc list-inside">
-          <li>Examen ID: 12345</li>
-          <li>Date: 2023-10-01</li>
-          <li>Duration: 2 hours</li>
-        </ul>
-        <ul className="list-disc list-inside">
-          <li>Examen ID: 12345</li>
-          <li>Date: 2023-10-01</li>
-          <li>Duration: 2 hours</li>
-        </ul>
-        <ul className="list-disc list-inside">
-          <li>Examen ID: 12345</li>
-          <li>Date: 2023-10-01</li>
-          <li>Duration: 2 hours</li>
-        </ul>
-        <ul className="list-disc list-inside">
-          <li>Examen ID: 12345</li>
-          <li>Date: 2023-10-01</li>
-          <li>Duration: 2 hours</li>
-        </ul>
-        <ul className="list-disc list-inside">
-          <li>Examen ID: 12345</li>
-          <li>Date: 2023-10-01</li>
-          <li>Duration: 2 hours</li>
-        </ul>
-        <ul className="list-disc list-inside">
-          <li>Examen ID: 12345</li>
-          <li>Date: 2023-10-01</li>
-          <li>Duration: 2 hours</li>
-        </ul>
-        <ul className="list-disc list-inside">
-          <li>Examen ID: 12345</li>
-          <li>Date: 2023-10-01</li>
-          <li>Duration: 2 hours</li>
-        </ul>
-        <ul className="list-disc list-inside">
-          <li>Examen ID: 12345</li>
-          <li>Date: 2023-10-01</li>
-          <li>Duration: 2 hours</li>
-        </ul>
-        <ul className="list-disc list-inside">
-          <li>Examen ID: 12345</li>
-          <li>Date: 2023-10-01</li>
-          <li>Duration: 2 hours</li>
-        </ul>
-        <ul className="list-disc list-inside">
-          <li>Examen ID: 12345</li>
-          <li>Date: 2023-10-01</li>
-          <li>Duration: 2 hours</li>
-        </ul>
-        <ul className="list-disc list-inside">
-          <li>Examen ID: 12345</li>
-          <li>Date: 2023-10-01</li>
-          <li>Duration: 2 hours</li>
-        </ul>
-        <ul className="list-disc list-inside">
-          <li>Examen ID: 12345</li>
-          <li>Date: 2023-10-01</li>
-          <li>Duration: 2 hours</li>
-        </ul>
+        <Creole examen={getYears[0]} />
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ export default function TryExamenPage() {
               </p>
             </div>
             <div className="p-6 bg-white rounded-lg border border-gray-200">
-              <h3 className="text-center font-semibold">Eating Out</h3>
+              <h3 className="font-semibold">Eating Out</h3>
               <div className="mt-4 space-y-4 text-sm text-gray-600">
                 <p>
                   Many people enjoy the experience of going out to eat at a
@@ -44,7 +44,7 @@ export default function TryExamenPage() {
                 </p>
               </div>
               <div className="mt-4 text-sm">
-                <ol class="list-[upper-roman] list-inside space-y-2">
+                <ol className="list-[upper-roman] list-inside space-y-2">
                   <li>
                     <span className="font-semibold">
                       Questions on the reading
