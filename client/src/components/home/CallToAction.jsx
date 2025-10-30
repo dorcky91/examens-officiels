@@ -11,6 +11,7 @@ export default function CallToAction() {
           backgroundImage: `linear-gradient(135deg, rgba(59, 130, 246, 0.9) 0%, rgba(99, 102, 241, 0.9) 100%), url(${studentImages.classroom.presentation})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}></div>
 
       <div className="px-6 lg:px-9 relative">

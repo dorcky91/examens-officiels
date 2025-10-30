@@ -67,7 +67,7 @@ const testimonials = [
   {
     name: "Farah Alexis",
     grade: "9AF - Première de classe",
-    image: studentImages.diversity.diverse1,
+    image: "https://i.pravatar.cc/150?img=16",
     rating: 5,
     text: "L'interface est intuitive et les ressources sont de qualité. Le suivi des progrès m'a permis de cibler mes révisions efficacement.",
   },
