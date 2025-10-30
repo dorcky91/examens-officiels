@@ -7,12 +7,11 @@ export default function Footer() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 text-center lg:text-left">
               <div className="lg:col-span-4">
                 <p>
-                  &copy; {new Date().getFullYear()} Your Company. All rights
-                  reserved.
+                  &copy; {new Date().getFullYear()} Arche. Tous droits réservés.
                 </p>
               </div>
               <div className="lg:col-span-4">
-                <p>Follow us on social media:</p>
+                <p>Suivez-nous sur les réseaux sociaux :</p>
                 <div>
                   <a href="#" className="text-gray-400 hover:text-white">
                     Facebook
@@ -30,7 +29,7 @@ export default function Footer() {
                 </div>
               </div>
               <div className="lg:col-span-4">
-                <p>Contact us:</p>
+                <p>Contactez-nous :</p>
                 <div>
                   <a href="#" className="text-gray-400 hover:text-white">
                     lorem@example.com
@@ -38,7 +37,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <a href="#" className="text-gray-400 hover:text-white">
-                    Phone: (123) 456-7890
+                    Téléphone : (123) 456-7890
                   </a>
                 </div>
               </div>

@@ -1,9 +1,9 @@
 import { useClasseByName } from "@/hooks/classes/queries";
-import Hero from "@/components/neuvieme/Hero";
-import Courses from "@/components/neuvieme/Courses";
-import NeuviemeFeatures from "@/components/neuvieme/NeuviemeFeatures";
-import NeuviemeStats from "@/components/neuvieme/NeuviemeStats";
-import NeuviemeWhyChoose from "@/components/neuvieme/NeuviemeWhyChoose";
+import Hero from "@/components/shared/Hero";
+import Courses from "@/components/shared/Courses";
+import Features from "@/components/shared/Features";
+import Stats from "@/components/shared/Stats";
+import WhyChoose from "@/components/shared/WhyChoose";
 import Loading from "@/ui/Loading";
 import Error from "@/ui/Error";
 
@@ -23,17 +23,19 @@ export default function NeuviemePage() {
     );
 
   return (
-    <div className="min-h-screen">
+    <>
       <Hero
         classe={classe}
         id="hero-neuvieme"
         subheading="Préparez-vous pour votre réussite en 9e Année Fondamentale avec nos ressources complètes"
       />
 
-      <NeuviemeFeatures />
-      <Courses matieres={classe?.matieres || []} url="neuvieme" />
-      <NeuviemeStats />
-      <NeuviemeWhyChoose />
-    </div>
+      <main>
+        <Features classType="neuvieme" />
+        <Courses matieres={classe?.matieres || []} url="neuvieme" />
+        <Stats classType="neuvieme" />
+        <WhyChoose classType="neuvieme" />
+      </main>
+    </>
   );
 }

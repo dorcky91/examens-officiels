@@ -8,12 +8,16 @@ export default function Examen({ courseName }) {
       .toLowerCase()
       .includes(decodeURIComponent(courseName.toLowerCase()))
   );
-  const getYears = filteredExamensByName.map((exam) => {
+  let getYears = filteredExamensByName.map((exam) => {
     return {
       id: exam._id,
       ...exam,
     };
   });
+
+  getYears = getYears.filter(
+    (year, index, self) => index === self.findIndex((y) => y.date === year.date)
+  );
   //#endregion
 
   return (
@@ -22,7 +26,10 @@ export default function Examen({ courseName }) {
         <select className="block w-full lg:w-auto bg-white border border-gray-300 rounded-md p-2">
           <option value="">Sélectionner une année...</option>
           {getYears.map((year) => (
-            <option key={year.id} value={year.id}>
+            <option
+              key={year.id}
+              value={year.id}
+              selected={year.id === getYears[0]?.id}>
               {year.date}
             </option>
           ))}

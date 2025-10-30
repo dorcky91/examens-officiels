@@ -28,7 +28,10 @@ export const Menu = () => {
     <nav className="sticky w-screen top-0 z-50 border-b border-gray-200 bg-white">
       <div className="w-full max-w-screen mx-auto px-3">
         <div className="flex justify-between items-center p-3 md:px-2">
-          <Link to="/">Logo</Link>
+          <Link to="/">
+            <img alt="Logo" src="/logoArche.png" className="h-14" />
+            {/* <img alt="Logo" src="/arche.png" className="h-11" />x */}
+          </Link>
           <button
             onClick={() => setShowMenu(!showMenu)}
             className="cursor-pointer md:hidden"
@@ -80,9 +83,9 @@ export const Menu = () => {
               </ul>
               <div>
                 <Link
-                  to="/submit"
+                  to="/login"
                   className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm hover:bg-blue-700 transition">
-                  Accion
+                  Se connecter
                 </Link>
               </div>
             </>
@@ -98,6 +101,6 @@ const links = [
 
   { to: "/neuvieme", label: "9AF" },
   { to: "/ns4", label: "NS4" },
-  { to: "/motivations", label: "Motivations" },
+  { to: "/formules", label: "Formules" },
   { to: "/a-propos", label: "À propos" },
 ];

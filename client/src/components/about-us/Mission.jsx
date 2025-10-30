@@ -6,7 +6,7 @@ export default function Mission() {
           <div className="bg-gray-50 p-6 rounded-lg group hover:bg-gradient-to-b from-indigo-500 to-indigo-800 transition-all duration-300">
             <div className="inline-flex group-hover:hidden bg-gradient-to-b from-indigo-500 to-indigo-800 rounded-lg p-3 mb-7">
               <img
-                src="/icones/goal.png"
+                src="/icons/goal.png"
                 alt="Goal"
                 loading="lazy"
                 className="w-10 h-10"
@@ -14,7 +14,7 @@ export default function Mission() {
             </div>
             <div className="group-hover:inline-flex hidden rounded-lg p-3 mb-7">
               <img
-                src="/icones/goal.png"
+                src="/icons/goal.png"
                 alt="Goal"
                 loading="lazy"
                 className="w-10 h-10"
@@ -33,7 +33,7 @@ export default function Mission() {
           <div className="bg-gray-50 p-6 rounded-lg group hover:bg-gradient-to-b from-teal-500 to-teal-800 transition-all duration-300">
             <div className="inline-flex group-hover:hidden bg-gradient-to-b from-teal-500 to-teal-800 rounded-lg p-3 mb-7">
               <img
-                src="/icones/eye.png"
+                src="/icons/eye.png"
                 alt="Vision"
                 loading="lazy"
                 className="w-10 h-10"
@@ -41,7 +41,7 @@ export default function Mission() {
             </div>
             <div className="group-hover:inline-flex hidden rounded-lg p-3 mb-7">
               <img
-                src="/icones/eye.png"
+                src="/icons/eye.png"
                 alt="Vision"
                 loading="lazy"
                 className="w-10 h-10"
@@ -59,14 +59,14 @@ export default function Mission() {
           <div className="bg-gray-50 p-6 rounded-lg group hover:bg-gradient-to-b from-orange-500 to-orange-800 transition-all duration-300">
             <div className="inline-flex group-hover:hidden bg-gradient-to-b from-orange-500 to-orange-800 rounded-lg p-3 mb-7">
               <img
-                src="/icones/diamond.png"
+                src="/icons/diamond.png"
                 alt="Valeurs"
                 className="w-10 h-10"
               />
             </div>
             <div className="group-hover:inline-flex hidden rounded-lg p-3 mb-7">
               <img
-                src="/icones/diamond.png"
+                src="/icons/diamond.png"
                 alt="Valeurs"
                 className="w-10 h-10"
               />

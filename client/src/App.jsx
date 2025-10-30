@@ -8,8 +8,14 @@ import AboutUsPage from "@/pages/AboutUsPage";
 import NeuviemeExamDetailsPage from "./pages/NeuviemeExamDetailsPage";
 import NS4ExamDetailsPage from "./pages/NS4ExamDetailsPage";
 import TryExamenPage from "./pages/TryExamenPage";
+import FormulesPage from "./pages/FormulesPage";
+import Login from "./pages/Login";
 
 const router = createBrowserRouter([
+  {
+    path: "/login",
+    element: <Login />,
+  },
   {
     path: "/",
     element: <Layout />,
@@ -40,8 +46,8 @@ const router = createBrowserRouter([
         element: <AboutUsPage />,
       },
       {
-        path: "/motivations",
-        element: <h4>Page des Motivations</h4>,
+        path: "/formules",
+        element: <FormulesPage />,
       },
       {
         path: "/essai",

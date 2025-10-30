@@ -3,7 +3,9 @@ import { Link } from "react-router";
 
 export default function Courses({ matieres, url }) {
   return (
-    <section className="py-20 bg-gradient-to-br from-indigo-50 via-white to-cyan-50 relative overflow-hidden">
+    <section
+      id="courses"
+      className="py-20 bg-gradient-to-br from-indigo-50 via-white to-cyan-50 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <div className="floating-shapes">
           <div className="shape shape-1"></div>

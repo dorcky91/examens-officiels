@@ -23,11 +23,13 @@ h6 {
 #hero-neuvieme {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-position: center;
 }
 
 #hero-ns4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-position: center;
 }
 
 .embla {
@@ -39,6 +41,15 @@ h6 {
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
+}
+
+#login {
+  #login-left {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.7)),
+      url("https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 /********************************************

@@ -49,11 +49,11 @@ export const HomePage = () => {
                 </Link>
               </div>
               <div className="grid grid-cols-2 gap-2">
-                <div>
+                <div className="bg-gray-50/70 backdrop-blur-sm rounded-xl p-4 border border-gray-100">
                   <h3 className="text-3xl">200+</h3>
                   <small>Examens disponibles</small>
                 </div>
-                <div>
+                <div className="bg-gray-50/70 backdrop-blur-sm rounded-xl p-4 border border-gray-100">
                   <h3 className="text-3xl">20+</h3>
                   <small>Tests disponibles</small>
                 </div>

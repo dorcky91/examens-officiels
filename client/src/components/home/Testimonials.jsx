@@ -53,14 +53,14 @@ const testimonials = [
   {
     name: "Marie Claire Jean",
     grade: "9AF - Réussie avec mention",
-    image: studentImages.success.celebrating,
+    image: "https://i.pravatar.cc/150?img=16",
     rating: 5,
     text: "Grâce à cette plateforme, j'ai pu m'exercer avec de vrais examens. Les explications détaillées m'ont beaucoup aidée à comprendre mes erreurs et à m'améliorer.",
   },
   {
     name: "Jean-Baptiste Pierre",
     grade: "NS4 - Admis à l'université",
-    image: studentImages.success.graduation1,
+    image: "https://i.pravatar.cc/150?img=7",
     rating: 5,
     text: "Les simulations en temps réel m'ont préparé parfaitement aux conditions d'examen. J'ai gagné en confiance et obtenu d'excellents résultats.",
   },
@@ -74,7 +74,7 @@ const testimonials = [
   {
     name: "Richardson Paul",
     grade: "NS4 - Mention très bien",
-    image: studentImages.studying.focused1,
+    image: "https://i.pravatar.cc/150?img=51",
     rating: 5,
     text: "Les guides d'étude sont excellents et les conseils d'experts m'ont donné des stratégies gagnantes pour aborder chaque matière.",
   },

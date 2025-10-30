@@ -62,7 +62,7 @@ export default function TryExamenPage() {
                             </span>
                             <div className="mt-2">
                               <textarea
-                                placeholder="Your answer..."
+                                placeholder="Votre réponse..."
                                 className="border border-gray-300 rounded-md p-2 w-full text-gray-600"
                                 rows="3"></textarea>
                             </div>
@@ -85,7 +85,7 @@ export default function TryExamenPage() {
               </button>
             </div>
           </div>
-          <div className="col-span-1 lg:col-span-3 bg-amber-50">
+          <div className="col-span-1 lg:col-span-3">
             <div className="sticky top-20">
               <div className="mb-5 flex gap-5 justify-center">
                 <a

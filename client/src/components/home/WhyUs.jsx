@@ -23,12 +23,12 @@ export default function WhyUs() {
                 Notre contenu vous aidera à apprendre plus rapidement.
               </h4>
             </div>
-            <p className="text-sm mt-auto">
+            <p className="text-sm leading-relaxed mt-auto">
               Bénéficiez de méthodes d'apprentissage innovantes et efficaces
               pour progresser plus vite.
             </p>
           </div>
-          <div className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-6 hover:scale-105 transition-transform duration-300 hover:rotate-1 hover:shadow-2xl">
+          <div className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-6 hover:scale-105 transition-transform duration-300 hover:shadow-2xl">
             <img
               src={studentImages.collaboration.group2}
               alt="Estudiantes colaborando en el aprendizaje"
@@ -46,7 +46,7 @@ export default function WhyUs() {
                 Planification flexible et organisation optimale de vos études.
               </h4>
             </div>
-            <p className="text-sm mt-auto">
+            <p className="text-sm leading-relaxed mt-auto">
               Organisez votre apprentissage selon votre rythme et vos
               disponibilités.
             </p>
@@ -60,7 +60,7 @@ export default function WhyUs() {
                 Sécurité et confidentialité garanties pour tous vos examens.
               </h4>
             </div>
-            <p className="text-sm mt-auto">
+            <p className="text-sm leading-relaxed mt-auto">
               Processus sécurisé pour la gestion de chaque examen et de ses
               résultats.
             </p>
@@ -74,12 +74,12 @@ export default function WhyUs() {
                 Résultats ciblés et objectifs personnalisés pour réussir.
               </h4>
             </div>
-            <p className="text-sm mt-auto">
+            <p className="text-sm leading-relaxed mt-auto">
               Atteignez vos objectifs grâce à un accompagnement personnalisé et
               adapté.
             </p>
           </div>
-          <div className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-6 rounded-lg order-1 lg:order-none hover:scale-105 transition-transform duration-300 hover:-rotate-1 hover:shadow-2xl">
+          <div className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-6 rounded-lg order-1 lg:order-none hover:scale-105 transition-transform duration-300 hover:shadow-2xl">
             <img
               src={studentImages.technology.online}
               alt="Estudiantes usando tecnología para estudiar"

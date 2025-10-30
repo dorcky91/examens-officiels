@@ -47,7 +47,7 @@ export default function NS4() {
             <div className="pt-6">
               <Link
                 to="/ns4"
-                className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-700 hover:from-purple-700 hover:to-pink-800 text-white px-8 py-4 rounded-2xl font-semibold shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105 hover:-translate-y-1 overflow-hidden">
+                className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-700 hover:from-purple-700 hover:to-pink-800 text-white px-4 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105 hover:-translate-y-1 overflow-hidden">
                 <span>Voir les examens</span>
                 <ArrowLongRightIcon className="h-6 w-6 transform transition-transform duration-300 group-hover:translate-x-1" />
 
