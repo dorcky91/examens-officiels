@@ -1,7 +1,7 @@
 import Examen from "@/components/neuvieme/details/Examen";
 import QuickLinks from "@/components/neuvieme/details/QuickLinks";
 import Hero from "@/components/neuvieme/Hero";
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 
 export default function NeuviemeExamDetailsPage() {
   const { courseName } = useParams();

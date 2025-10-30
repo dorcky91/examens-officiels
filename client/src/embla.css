@@ -1,0 +1,73 @@
+.embla {
+  --slide-spacing: 1rem;
+  --slide-size: 100%;
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+
+.embla__slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+}
+
+.embla__controls {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+}
+
+.embla__progress {
+  border-radius: 1.8rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  height: 0.2rem;
+  max-width: 90%;
+  overflow: hidden;
+}
+
+.embla__progress__bar {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+}
+
+.embla__progress {
+  transition: opacity 0.3s ease-in-out;
+  width: 8rem;
+}
+
+.embla__progress--hidden {
+  opacity: 0;
+}
+
+.embla__progress__bar {
+  animation-name: autoplay-progress;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+.embla__progress--hidden .embla__progress__bar {
+  animation-play-state: paused;
+}
+
+@keyframes autoplay-progress {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(100%, 0, 0);
+  }
+}

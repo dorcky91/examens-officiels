@@ -1,5 +1,5 @@
 import { useClasseByName } from "@/hooks/classes/queries";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 export default function QuickLinks({ name, url }) {
   //#region Hooks
@@ -35,7 +35,7 @@ export default function QuickLinks({ name, url }) {
           style={{ backgroundColor: "#f94f10" }}>
           <div>
             <p className="text-2xl">⚡</p>
-            <h4 className="font-semibold">
+            <h4 className="font-semibold !text-white">
               Notre contenu vous aidera à apprendre plus rapidement.
             </h4>
           </div>

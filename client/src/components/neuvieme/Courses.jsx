@@ -1,12 +1,22 @@
 import { COLORS } from "@/utils/helpers";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 export default function Courses({ matieres, url }) {
   return (
-    <section className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 rounded-lg">
-        <div className="grid grid-cols-12 space-y-5 sm:space-y-0 gap-5 justify-center text-center text-white">
-          {matieres.map((course) => {
+    <section className="py-20 bg-gradient-to-br from-indigo-50 via-white to-cyan-50 relative overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="floating-shapes">
+          <div className="shape shape-1"></div>
+          <div className="shape shape-2"></div>
+          <div className="shape shape-3"></div>
+          <div className="shape shape-4"></div>
+          <div className="shape shape-5"></div>
+        </div>
+      </div>
+
+      <div className="w-screen mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+          {matieres.map((course, index) => {
             const svgIcon = course.icone
               .replace(/width="[^"]*"/, `width="50"`)
               .replace(/height="[^"]*"/, `height="50"`);
@@ -19,22 +29,38 @@ export default function Courses({ matieres, url }) {
               <Link
                 key={course.nom}
                 to={`/${url}/${encodeName}`}
-                className={`col-span-6 md:col-span-4 xl:col-span-3 bg-gradient-to-b ${
-                  COLORS[matieres.indexOf(course) % COLORS.length]
-                } rounded-lg p-6 hover:scale-105 transition-transform duration-300 hover:shadow-2xl flex items-center justify-center h-full`}>
-                <div>
-                  <div
-                    className="flex justify-center text-center mb-2"
-                    dangerouslySetInnerHTML={{ __html: svgIcon }}
-                  />
+                className="card-courses group"
+                style={{
+                  animationDelay: `${index * 100}ms`,
+                }}>
+                <div
+                  className={`card-inner bg-gradient-to-br ${
+                    COLORS[index % COLORS.length]
+                  } relative overflow-hidden`}>
+                  <div className="shine-effect"></div>
 
-                  {/* <img
-                      src={course.icon}
-                      alt={course.nom}
-                      loading="lazy"
-                      className="w-10 h-10 sm:w-14 sm:h-14 mb-2 mx-auto"
-                    /> */}
-                  <p className="text-sm sm:text-lg lg:text-xl">{course.nom}</p>
+                  <div className="card-content">
+                    <div className="icon-container">
+                      <div
+                        className="course-icon"
+                        dangerouslySetInnerHTML={{ __html: svgIcon }}
+                      />
+                    </div>
+
+                    <h3 className="course-title">{course.nom}</h3>
+
+                    <div className="card-decoration">
+                      <div className="decoration-dot"></div>
+                      <div className="decoration-dot"></div>
+                      <div className="decoration-dot"></div>
+                    </div>
+                  </div>
+
+                  <div className="particles">
+                    <div className="particle particle-1"></div>
+                    <div className="particle particle-2"></div>
+                    <div className="particle particle-3"></div>
+                  </div>
                 </div>
               </Link>
             );
@@ -44,120 +70,3 @@ export default function Courses({ matieres, url }) {
     </section>
   );
 }
-
-const courses = [
-  {
-    classe: "neuvieme",
-    to: "/neuvieme/anglais",
-    label: "Anglais",
-    icon: "/matieres/langue.png",
-  },
-  {
-    classe: "neuvieme",
-    to: "/neuvieme/creole",
-    label: "Créole",
-    icon: "/matieres/langue.png",
-  },
-  {
-    classe: "neuvieme",
-    to: "/neuvieme/espagnol",
-    label: "Espagnol",
-    icon: "/matieres/langue.png",
-  },
-  {
-    classe: "neuvieme",
-    to: "/neuvieme/francais",
-    label: "Français",
-    icon: "/matieres/langue.png",
-  },
-  {
-    classe: "neuvieme",
-    to: "/neuvieme/mathematiques",
-    label: "Mathématiques",
-    icon: "/matieres/maths.png",
-  },
-  {
-    classe: "neuvieme",
-    to: "/neuvieme/sciences-sociales",
-    label: "Sciences Sociales",
-    icon: "/matieres/sciences.png",
-  },
-  {
-    classe: "neuvieme",
-    to: "/neuvieme/sciences-experimentales",
-    label: "Sciences Éxpérimentales",
-    icon: "/matieres/sciences.png",
-  },
-  {
-    classe: "ns4",
-    to: "/ns4/art-musique",
-    label: "Art-Musique",
-    icon: "/matieres/musique.png",
-  },
-  {
-    classe: "ns4",
-    to: "/ns4/anglais",
-    label: "Anglais",
-    icon: "/matieres/langue.png",
-  },
-  {
-    classe: "ns4",
-    to: "/ns4/biologie-geologie",
-    label: "Biologie-Géologie",
-    icon: "/matieres/biotech.png",
-  },
-  {
-    classe: "ns4",
-    to: "/ns4/chimie",
-    label: "Chimie",
-    icon: "/matieres/chimie.png",
-  },
-  {
-    classe: "ns4",
-    to: "/ns4/creole",
-    label: "Créole",
-    icon: "/matieres/langue.png",
-  },
-  {
-    classe: "ns4",
-    to: "/ns4/economie",
-    label: "Économie",
-    icon: "/matieres/economie.png",
-  },
-  {
-    classe: "ns4",
-    to: "/ns4/espagnol",
-    label: "Espagnol",
-    icon: "/matieres/langue.png",
-  },
-  {
-    classe: "ns4",
-    to: "/ns4/informatique",
-    label: "Informatique",
-    icon: "/matieres/informatique.png",
-  },
-  {
-    classe: "ns4",
-    to: "/ns4/mathematiques",
-    label: "Mathématiques",
-    icon: "/matieres/maths.png",
-  },
-  {
-    classe: "ns4",
-    to: "/ns4/philosophie",
-    label: "Philosophie",
-    icon: "/matieres/philosophie.png",
-  },
-  {
-    classe: "ns4",
-    to: "/ns4/physiques",
-    label: "Physiques",
-    icon: "/matieres/physiques.png",
-  },
-  {
-    classe: "ns4",
-    to: "/ns4/sciences-sociales",
-    label: "Sciences Sociales",
-    icon: "/matieres/sciences.png",
-  },
-];

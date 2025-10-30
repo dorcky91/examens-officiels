@@ -1,10 +1,10 @@
 import { createRoot } from "react-dom/client";
-import "./assets/styles/index.css";
 import App from "./App.jsx";
 import { StrictMode } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { Toaster } from "react-hot-toast";
+import "./index.css";
 
 const queryClient = new QueryClient();
 

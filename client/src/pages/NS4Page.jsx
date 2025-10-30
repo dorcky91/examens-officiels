@@ -12,7 +12,11 @@ export default function NS4Page() {
 
   return (
     <>
-      <Hero classe={classe} />
+      <Hero
+        classe={classe}
+        id="hero-ns4"
+        subheading="Tu futuro comienza aquí"
+      />
       <main>
         <Courses matieres={classe.matieres} url="ns4" />
       </main>

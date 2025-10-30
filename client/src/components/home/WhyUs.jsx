@@ -1,10 +1,14 @@
+import { studentImages } from "@/utils/studentImages";
+
 export default function WhyUs() {
   return (
-    <section className="bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="space-y-4 lg:pr-20 text-center max-w-xl mx-auto mb-10">
-          <h2 className="text-4xl font-bold">Pourquoi apprendre avec nous ?</h2>
-          <p className="text-gray-600 -mt-2">
+    <section className="py-20 bg-white">
+      <div className="px-6 lg:px-9">
+        <div className="text-center max-w-xl mx-auto mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            Pourquoi apprendre avec nous ?
+          </h2>
+          <p className="text-lg text-gray-600">
             Découvrez nos avantages uniques pour une expérience d'apprentissage
             optimale.
           </p>
@@ -15,7 +19,7 @@ export default function WhyUs() {
             style={{ backgroundColor: "#f94f10" }}>
             <div>
               <p className="text-2xl">⚡</p>
-              <h4 className="font-semibold">
+              <h4 className="font-semibold !text-white">
                 Notre contenu vous aidera à apprendre plus rapidement.
               </h4>
             </div>
@@ -26,8 +30,8 @@ export default function WhyUs() {
           </div>
           <div className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-6 hover:scale-105 transition-transform duration-300 hover:rotate-1 hover:shadow-2xl">
             <img
-              src="https://plus.unsplash.com/premium_photo-1683195785758-9906a4ccf554?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
+              src={studentImages.collaboration.group2}
+              alt="Estudiantes colaborando en el aprendizaje"
               style={{ height: "340px" }}
               loading="lazy"
               className="w-full object-cover rounded-lg"
@@ -38,7 +42,7 @@ export default function WhyUs() {
             style={{ backgroundColor: "#3974ff" }}>
             <div>
               <p className="text-2xl">📅</p>
-              <h4 className="font-semibold">
+              <h4 className="font-semibold !text-white">
                 Planification flexible et organisation optimale de vos études.
               </h4>
             </div>
@@ -52,7 +56,7 @@ export default function WhyUs() {
             style={{ backgroundColor: "#c9bcab" }}>
             <div>
               <p className="text-2xl">🔒</p>
-              <h4 className="font-semibold">
+              <h4 className="font-semibold !text-white">
                 Sécurité et confidentialité garanties pour tous vos examens.
               </h4>
             </div>
@@ -66,7 +70,7 @@ export default function WhyUs() {
             style={{ backgroundColor: "#4c1526" }}>
             <div>
               <p className="text-2xl">🎯</p>
-              <h4 className="font-semibold">
+              <h4 className="font-semibold !text-white">
                 Résultats ciblés et objectifs personnalisés pour réussir.
               </h4>
             </div>
@@ -77,8 +81,8 @@ export default function WhyUs() {
           </div>
           <div className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-6 rounded-lg order-1 lg:order-none hover:scale-105 transition-transform duration-300 hover:-rotate-1 hover:shadow-2xl">
             <img
-              src="https://plus.unsplash.com/premium_photo-1683195785758-9906a4ccf554?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
+              src={studentImages.technology.online}
+              alt="Estudiantes usando tecnología para estudiar"
               style={{ height: "340px" }}
               loading="lazy"
               className="w-full object-cover rounded-lg"
