@@ -31,13 +31,17 @@ export default function Footer() {
               <div className="lg:col-span-4">
                 <p>Contactez-nous :</p>
                 <div>
-                  <a href="#" className="text-gray-400 hover:text-white">
-                    lorem@example.com
+                  <a
+                    href="mailto:contact@logenik.net?Subject=Question sur le site"
+                    className="text-gray-400 hover:text-white">
+                    contact@logenik.net
                   </a>
                 </div>
                 <div>
-                  <a href="#" className="text-gray-400 hover:text-white">
-                    Téléphone : (123) 456-7890
+                  <a
+                    href="tel:+523352008682"
+                    className="text-gray-400 hover:text-white">
+                    Téléphone : +52 3352008682
                   </a>
                 </div>
               </div>
