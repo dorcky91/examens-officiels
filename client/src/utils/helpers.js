@@ -13,7 +13,7 @@ export const LINKS = [
   { to: "/", label: "Accueil" },
   // { to: "/neuvieme", label: "9AF" },
   // { to: "/ns4", label: "NS4" },
-  { to: "/motivations", label: "Motivations" },
+  { to: "/formules", label: "Formules" },
   { to: "/a-propos", label: "À propos" },
   { to: "/statistiques", label: "Statistiques" },
 ];

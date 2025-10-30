@@ -1,16 +1,21 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router";
 import { Layout } from "@/ui/Layout";
 import { ErrorPage } from "@/pages/ErrorPage";
 import { HomePage } from "@/pages/HomePage";
 import NeuviemePage from "@/pages/NeuviemePage";
 import NS4Page from "@/pages/NS4Page";
 import AboutUsPage from "@/pages/AboutUsPage";
-import StatistiquesPage from "@/pages/StatistiquesPage";
 import NeuviemeExamDetailsPage from "./pages/NeuviemeExamDetailsPage";
 import NS4ExamDetailsPage from "./pages/NS4ExamDetailsPage";
 import TryExamenPage from "./pages/TryExamenPage";
+import FormulesPage from "./pages/FormulesPage";
+import Login from "./pages/Login";
 
 const router = createBrowserRouter([
+  {
+    path: "/login",
+    element: <Login />,
+  },
   {
     path: "/",
     element: <Layout />,
@@ -41,12 +46,8 @@ const router = createBrowserRouter([
         element: <AboutUsPage />,
       },
       {
-        path: "/motivations",
-        element: <h4>Page des Motivations</h4>,
-      },
-      {
-        path: "/statistiques",
-        element: <StatistiquesPage />,
+        path: "/formules",
+        element: <FormulesPage />,
       },
       {
         path: "/essai",

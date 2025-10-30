@@ -89,10 +89,11 @@ function renderMultipleChoiceOptions(choices, question) {
 function renderTextArea() {
   return (
     <div className="mt-2">
-      <textarea
-        placeholder="Your answer..."
+      <p className="text-teal-600">La bonne réponse sera affichée ici.</p>
+      {/* <textarea
+        placeholder="Votre réponse..."
         className="border border-gray-300 rounded-md p-2 w-full text-gray-600"
-        rows="3"></textarea>
+        rows="3"></textarea> */}
     </div>
   );
 }
